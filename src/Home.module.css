@@ -1,0 +1,91 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #6efd6e;
+}
+
+.headerTwo {
+  border-bottom: 1px solid #6efd6e;
+  padding-bottom: 10px;
+}
+
+.profile {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  background-color: rgba(10, 10, 10, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 40px); /* Adjust based on your layout needs */
+  max-width: 600px; /* Adjust as needed */
+}
+
+.profileImage {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #6efd6e;
+  object-fit: cover;
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.profileText {
+  flex: 1;
+}
+
+.profileText h1 {
+  margin: 0 0 5px 0; /* Reduce top and bottom margins */
+}
+
+.profileText p {
+  margin: 0; /* Remove default paragraph margins */
+}
+
+.about, .contact {
+  margin-bottom: 30px;
+}
+
+/* Terminal-like effect */
+.container::before {
+  content: "> ";
+  font-weight: bold;
+}
+
+/* Blinking cursor effect */
+.container::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.navigation {
+  /* Styles for the navigation section */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btnProjects {
+  /* Styles for the projects button */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.banner {
+  position: relative;
+  background-image: url('../public/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust as needed */
+  margin-bottom: 30px;
+}
